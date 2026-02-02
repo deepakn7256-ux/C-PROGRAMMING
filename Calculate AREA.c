@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    float len;
+    float breadth;
+    float Area;
+    printf("Enter The Length : ");
+    scanf("%f",& len);
+    printf("Enter the Breadth : ");
+    scanf("%f",& breadth);
+    Area=len*breadth;
+    printf("%f",Area);
+    return 0;
+}

@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+
+    float balance, withdrawAmount;
+
+    printf("Enter current account balance: ");
+    scanf("%f", &balance);
+
+   
+    printf("Enter amount to withdraw: ");
+    scanf("%f", &withdrawAmount);
+
+
+    if (withdrawAmount < 0) {
+   
+        printf("\nError: You cannot withdraw a negative amount.\n");
+    } 
+    else if (withdrawAmount > balance) {
+    
+        printf("\nError: Insufficient funds!\n");
+        printf("Your current balance is: %.2f\n", balance);
+    } 
+    else {
+      
+        balance = balance - withdrawAmount;
+        printf("\nTransaction Successful!\n");
+        printf("Amount Withdrawn: %.2f\n", withdrawAmount);
+        printf("Current Balance:  %.2f\n", balance);
+    }
+
+    return 0;
+}
